@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>pixek geek</title>
+    <meta charset="UTF-8" />
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+
+    .container {
+        width: 100%;
+        height:700px;
+        background:#746F6E;
+    }
+    .head {
+        width:60%;
+        height:200px;
+        background:#F8664C;
+        margin-left:0px;
+    }
+    .navbar {
+        overflow: HIDDEN;
+        top: 0;
+        width: 100%;
+    }
+    .navbar H2{
+        float: left;
+        color: #fff;
+    }
+    .navbar H3{
+        font-size: 18px;
+        float: left;
+        color: #fff;
+        padding-left:20px;
+    }
+    .navbar a {
+        float: right;
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 20px 20px;
+        font-size: 14px;
+    }
+    .Content{
+        width:90%
+        height:89%;
+        background:#fff;
+        margin-top:-130px;
+        margin-left:5%;
+        padding-bottom:5px;
+    }
+    H1{
+        color:#F8664C;
+        font-size:45px;
+    }
+    H5{
+        color: #9E9795;
+    }
+    hr.new {
+        border-top: 1px solid whitesmoke;
+        margin-top:-10px;
+    }
+    .text{
+        margin-top:-50px;
+        width:50%;
+        float:left;
+        padding:40px;
+        margin-left:10px;
+    }
+    p{
+        font-size:21px;
+    }
+    li{
+        font-size:21px;
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <script type="text/babel">
+
+      const cont=(<div className="text">
+      <h1>Rejection is hard</h1>
+      <hr className="new"></hr>
+      <h5>FEBRUARY 12,2019</h5>
+      <p>We are taught rejection at an early age when we want to do
+      something or get something and our parents say "no".</p>
+      <p>Rejection also happens when:</p>
+      <ul>
+      <li>We are aiming for a certain grade in school and we don't get it.</li>
+      <li>you want a boyfriend or girlfriend and he/she says "no. I don't like 
+      you in that way."</li>
+      <li>You go through an interview process for a job and you don't get 
+      the position.</li>
+      <li>when you work so hard to get a client and your proposal gets 
+      rejected.</li>
+      </ul>
+      <p>At the root of it all, we all want something so bad and when life says 
+      no, you can't have it, we get mad either take it out on someone 
+      else, something else or worse, ourselves.</p>
+      <p>Rejection is part of life and its ok to be rejected.</p>
+      </div>);
+      const inelement =React.createElement("div", { className:"content"},cont);
+
+      const menu=(<div className="navbar">
+            <h3>PIXEL GEEK</h3>
+            <a>THE OVERFLOW</a>
+            <a>PROJECTS</a>
+            <a>RAMBLES</a>
+            <a>VIDEOS</a>
+            <a></a>
+            </div>);
+
+      const element =React.createElement("div", { className:"head"},menu);
+
+      const rootElement =React.createElement("div",{className:"container"},element,inelement);
+
+      ReactDOM.render(rootElement, document.getElementById("app"));
+
+    </script>
+  </body>
+</html>
