@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React Session</title>
+    <meta charset="UTF-8" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+<script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+<style>
+#ab{
+background-image:url('https://media.gettyimages.com/photos/green-sprout-growing-out-from-soil-isolated-on-white-background-picture-id905822470?b=1&k=6&m=905822470&s=612x612&w=0&h=9XAryO9fh8gMiejZ4CRoSFtjZWa4FKL75vV3Fcw7eE4=');
+background-repeat: no-repeat;
+}
+</style>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      const rootElement = document.getElementById("root");
+      const element=(
+      <div id="ab" style={{height:"570px",width:"720px",padding:"10px",margin:"auto",textAlign:"center"}}>
+         
+	        <h1 style={{color:"black",marginRight:"352px",Top:"45px"}}>T.gayathri</h1>
+		<h3 style={{color:"Black",marginRight:"350px"}}> developer<br></br>be-CSE<br></br>year:2020</h3>
+		
+	    
+      </div>);
+      ReactDOM.render(element,rootElement);
+	console.log(React);
+      console.log(ReactDOM);
+    </script>
+  </body>
+</html>
