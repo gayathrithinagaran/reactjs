@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<script>
+   fetch("https://restcountries.eu/rest/v2/all")
+  .then(data => {
+      let b=data.json();
+      console.log("success:::",b);
+    return b;
+      })
+  .then(data => {
+    console.log('This is a Parsed json1', data);
+    return fetch("https://restcountries.eu/rest/v2/name/united");
+  })
+  .then(data => {
+      let b=data.json();
+      console.log("2 nd sucess:::",b);
+    return b;
+      })
+  .then(data => {
+    console.log('This is Parsed json2', data);
+  })
+  .catch(error => {
+    console.log("error :(");
+  });
+
+</script>
+</head>
+<body>
+
+<h1>Fetch</h1>
+
+</body>
+</html>
